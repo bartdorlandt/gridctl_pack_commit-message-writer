@@ -1,0 +1,5 @@
+apiVersion: gridctl.dev/v1
+kind: Pack
+name: commit-message-writer
+description: Skill that writes Conventional Commits messages from staged changes
+skills: [commit-message-writer]
