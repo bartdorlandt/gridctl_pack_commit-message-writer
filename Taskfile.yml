@@ -5,9 +5,9 @@ version: "3"
 vars:
   PACK: commit-message-writer
   # Override for local dev: task add REPO=file://$PWD AUTH=
-  REPO: https://gitlab/nda/gridctl_stack/commit-message-writer.git
-  # gridctl's built-in SSH can't negotiate with this GitLab, so clone over HTTPS with the vault token
-  AUTH: --vault-key GITLAB_TOKEN
+  REPO: https://github.com/bartdorlandt/gridctl_pack_commit-message-writer.git
+  # Private GitHub repo: clone over HTTPS with the GitHub token from the vault
+  AUTH: --vault-key GITHUB_TOKEN
 
 tasks:
   default: task -l --sort none
